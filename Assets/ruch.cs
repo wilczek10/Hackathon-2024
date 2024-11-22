@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Prędkość poruszania się
-    public float jumpForce = 7f; // Siła skoku
-    public Transform groundCheck; // Punkt sprawdzający, czy postać jest na ziemi
-    public LayerMask groundLayer; // Warstwa "ziemi", która pozwala sprawdzić, czy gracz jest na ziemi
+    public float moveSpeed = 5f; // Pr�dko�� poruszania si�
+    public float jumpForce = 7f; // Si�a skoku
+    public Transform groundCheck; // Punkt sprawdzaj�cy, czy posta� jest na ziemi
+    public LayerMask groundLayer; // Warstwa "ziemi", kt�ra pozwala sprawdzi�, czy gracz jest na ziemi
 
     private Rigidbody2D rb;
     private bool isGrounded;
-    private float groundCheckRadius = 0.2f; // Promień sprawdzania, czy postać dotyka ziemi
+    private float groundCheckRadius = 0.2f; // Promie� sprawdzania, czy posta� dotyka ziemi
     private float moveInput;
 
     private void Start()
@@ -19,19 +19,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // Sprawdzenie, czy postać dotyka ziemi
+        // Sprawdzenie, czy posta� dotyka ziemi
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Pobranie wejścia gracza (lewo/prawo)
+        // Pobranie wej�cia gracza (lewo/prawo)
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // Poruszanie postacią
+        // Poruszanie postaci�
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Skakanie, jeśli postać jest na ziemi i nacisniesz strzałkę w górę
-        if (isGrounded && (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
+        // Skakanie, je�li posta� jest na ziemi i nacisniesz strza�k� w g�r�
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie siły skoku
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie si�y skoku
         }
     }
 }
