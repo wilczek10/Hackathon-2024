@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Skakanie, je�li posta� jest na ziemi i nacisniesz strza�k� w g�r�
-        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
+        if (isGrounded && (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie si�y skoku
         }
