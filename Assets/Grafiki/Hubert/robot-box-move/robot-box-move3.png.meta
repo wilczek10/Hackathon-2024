@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      robot-box-move3_0: -1900265022618438241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

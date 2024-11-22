@@ -6,6 +6,7 @@ public class Laser : MonoBehaviour
     public int damage = 10;    // Obra¿enia zadawane przez pocisk
     public float lifetime = 5f; // Czas ¿ycia pocisku
     private Transform target;  // Cel, do którego zmierza pocisk
+    private Vector3 direction;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class Laser : MonoBehaviour
     public void SetTarget(Transform targetTransform)
     {
         target = targetTransform;
+        direction = (target.position - transform.position).normalized;
     }
 
     void Update()
@@ -23,13 +25,12 @@ public class Laser : MonoBehaviour
         if (target != null)
         {
             // Oblicz kierunek do celu
-            Vector3 direction = (target.position - transform.position).normalized;
 
             // Przesuwaj pocisk w kierunku celu
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
 
             // Obróæ pocisk w stronê celu
-            transform.rotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
         }
         else
         {
@@ -38,7 +39,7 @@ public class Laser : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
