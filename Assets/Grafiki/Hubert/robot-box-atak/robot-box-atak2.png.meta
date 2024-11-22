@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5600678c576b00d4c9b73dd2d7625541
+guid: 30769f7fe1c1a2f4ab23a462f79aeb81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 138493555251495676
-    second: guardianidleprawo2_0
+      213: -3638934473866559647
+    second: robot-box-atak2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guardianidleprawo2_0
+      name: robot-box-atak2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 16
-        height: 27
+        width: 22
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf2427c97270ce100800000000000000
-      internalID: 138493555251495676
+      spriteID: 16fb24c3068ef7dc0800000000000000
+      internalID: -3638934473866559647
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      guardianidleprawo2_0: 138493555251495676
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
