@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      guardianzmianastron2_0: 3861002697305441556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

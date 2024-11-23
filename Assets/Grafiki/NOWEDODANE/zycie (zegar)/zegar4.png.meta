@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ea93118f7bd57542aa59ba715594e3e
+guid: 22789fa32e1b11f478d0e008609712d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8825204843830241745
-    second: guardianidlelewo2_0
+      213: 4880037778566142132
+    second: zegar4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guardianidlelewo2_0
+      name: zegar4_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 16
-        height: 27
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f261175d3f2968580800000000000000
-      internalID: -8825204843830241745
+      spriteID: 4b8dbe9018069b340800000000000000
+      internalID: 4880037778566142132
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      guardianidlelewo2_0: -8825204843830241745
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
