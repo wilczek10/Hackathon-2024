@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atakrakieta1_0: 5815366123405140315
+      atakrakieta1_1: -7936340174025189237
+      atakrakieta1_2: 4531923784327340985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

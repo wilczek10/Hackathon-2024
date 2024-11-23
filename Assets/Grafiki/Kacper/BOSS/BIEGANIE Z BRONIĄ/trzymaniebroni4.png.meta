@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trzymaniebroni4_0: -7945770731807216135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

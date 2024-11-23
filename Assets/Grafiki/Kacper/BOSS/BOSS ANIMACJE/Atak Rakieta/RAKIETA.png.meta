@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RAKIETA_0: 5875719147829242601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
