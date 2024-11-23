@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wyciaganie broni2_0: 331733926100784340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
