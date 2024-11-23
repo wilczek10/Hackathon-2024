@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>(); // Pobranie komponentu Rigidbody2D
     }
 
@@ -38,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         // Obrót postaci w zależności od kierunku
         if (moveInput > 0)
         {
-            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            if (GetCurrentClipName() == "trzymaniebroni" || GetCurrentClipName() == "bieganiezbronia")
             {
                 transform.localScale = new Vector3(6, 6, 6);
                 animator.Play("bieganiezbronia");
@@ -51,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (moveInput < 0)
         {
-            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            if (GetCurrentClipName() == "trzymaniebroni" || GetCurrentClipName() == "bieganiezbronia")
             {
                 transform.localScale = new Vector3(-6, 6, 6);
                 animator.Play("bieganiezbronia");
@@ -73,15 +72,26 @@ public class PlayerMovement : MonoBehaviour
         // Animacja "wyciąganie", gdy naciśniesz "E"
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "trzymaniebroni" && animator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "bieganiezbronia")
+            if (GetCurrentClipName() != "trzymaniebroni" && GetCurrentClipName() != "bieganiezbronia")
             {
                 animator.Play("wyciaganie");
             }
-            else if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            else if (GetCurrentClipName() == "trzymaniebroni" || GetCurrentClipName() == "bieganiezbronia")
             {
                 animator.Play("chowanie");
             }
 
         }
+    }
+
+    private string GetCurrentClipName()
+    {
+        if(animator.GetCurrentAnimatorClipInfoCount(0) == 0)
+        {
+            Debug.LogWarning("No animation playing");
+            return "e";
+        }
+
+        return animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
     }
 }

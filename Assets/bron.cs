@@ -15,7 +15,7 @@ public class bron : MonoBehaviour
     void Update()
     {
         // Sprawdzenie, czy gracz klikn¹³ prawym przyciskiem myszy
-        if (Input.GetMouseButtonDown(1) && _animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || Input.GetMouseButtonDown(1) && _animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+        if (Input.GetMouseButtonDown(1) && (_animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || _animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia"))
         {
             Fire();
         }
