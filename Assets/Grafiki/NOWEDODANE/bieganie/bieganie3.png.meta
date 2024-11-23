@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: eea6b942e8ea09c40a10e8a14fab4b65
+guid: a03af551e29b9674b96e99bcd7dcd353
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4616187647488888312
-    second: idle3_0
-  - first:
-      213: 8686318598480117520
-    second: idle3_1
-  - first:
-      213: 8221861445902159548
-    second: idle3_2
+      213: 2017040137749443634
+    second: bieganie3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,57 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle3_0
+      name: bieganie3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
-        width: 50
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fd0f11353eff0040800000000000000
-      internalID: 4616187647488888312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle3_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 6
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01fb6444eb00c8870800000000000000
-      internalID: 8686318598480117520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle3_2
-      rect:
-        serializedVersion: 2
-        x: 20
         y: 0
-        width: 10
-        height: 8
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbe4a7b7c6be91270800000000000000
-      internalID: 8221861445902159548
+      spriteID: 234b24c8157fdfb10800000000000000
+      internalID: 2017040137749443634
       vertices: []
       indices: 
       edges: []
@@ -211,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      idle3_0: 4616187647488888312
-      idle3_1: 8686318598480117520
-      idle3_2: 8221861445902159548
+      bieganie3_0: 2017040137749443634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

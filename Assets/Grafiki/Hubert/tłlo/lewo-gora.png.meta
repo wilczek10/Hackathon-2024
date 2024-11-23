@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 64047fb9cc973cf4aa769a35c4f2dbc4
+guid: 9e086da237317fa4f866ff900a3cde78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5341549253738738235
-    second: bieganie1_0
+      213: 9095984333505197399
+    second: lewo-gora_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bieganie1_0
+      name: lewo-gora_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 26
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cd46a421410fd5b0800000000000000
-      internalID: -5341549253738738235
+      spriteID: 75578190f8d6b3e70800000000000000
+      internalID: 9095984333505197399
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bieganie1_0: -5341549253738738235
+      lewo-gora_0: 9095984333505197399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
