@@ -1,0 +1,1 @@
+Gabryś to poprawny branch
