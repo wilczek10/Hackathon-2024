@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bieganie4_0: 7551616213959278109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
