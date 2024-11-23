@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-<<<<<<< Updated upstream
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -59,56 +59,5 @@ public class PlayerHealth : MonoBehaviour
                 fillImage.fillAmount = 0f; // Wypełnienie na 0%
             }
         }
-=======
-using TMPro;
-
-public class PlayerHealth : MonoBehaviour
-{
-    public int maxHealth = 100;
-    private int currentHealth;
-    [SerializeField] private Image _healthBarFill;
-    [SerializeField] private float _fillSpeed;
-    void Start()
-    {
-        currentHealth = maxHealth;    
-
-        // Zaktualizuj pasek zdrowia
-        UpdateHealthBar();
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        Debug.Log("Player Health: " + currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-        UpdateHealthBar();
-    }
-
-    private void AddHealth(int amount)
-    {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        UpdateHealthBar();
-    }
-
-    private void UpdateHealthBar()
-    {
-        float targetFillAmount = (float)currentHealth / maxHealth; // Użyj currentHealth
-     if (_healthBarFill != null)
-   {
-          _healthBarFill.fillAmount = targetFillAmount;
-     }
-   
-    }
-
-    void Die()
-    {
-        Debug.Log("Player is dead!");
-        // Obsługa śmierci gracza (respawn, koniec gry itp.)
->>>>>>> Stashed changes
     }
 }
