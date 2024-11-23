@@ -4,10 +4,15 @@ public class zyciebot : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
+    private Animator animator;
 
     void Start()
     {
         currentHealth = maxHealth;
+    }
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -17,8 +22,15 @@ public class zyciebot : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Die();
+            Debug.Log("smiercbota");
+            animator.Play("smierc");
+            animator.SetTrigger("smierc");
+            //Die();
         }
+    }
+    public void destory()
+    {
+        Destroy(gameObject);
     }
 
     void Die()

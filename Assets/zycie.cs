@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth1 : MonoBehaviour
 {
     public int maxHealth = 100;               // Maksymalne zdrowie gracza
     public int currentHealth;                 // Bieżące zdrowie gracza

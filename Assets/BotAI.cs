@@ -95,7 +95,7 @@ public class BotAI2D : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
 
         // Poruszaj siê tylko w poziomie
-        movement = new Vector2(direction.x, 0);
+        movement = new Vector2(direction.x, direction.y);
 
         // Obróæ bota w kierunku gracza (tylko w poziomie)
         if (movement.x > 0)

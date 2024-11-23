@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
        
 
         // Skakanie, jeśli postać jest na ziemi i nacisniesz strzałkę w górę
-        if (isGrounded && (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
+        if (isGrounded && (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W)))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie siły skoku
         }
