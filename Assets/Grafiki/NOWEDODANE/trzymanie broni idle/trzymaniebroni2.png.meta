@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a2fcd965df62f242979d85b23df1aa6
+guid: 133239f6a58ab0145b9619ab63fb4dfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3966654026724937289
-    second: laser_0
+      213: 8374170977697680906
+    second: trzymaniebroni2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: laser_0
+      name: trzymaniebroni2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 0
-        width: 7
-        height: 1
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b1ff2ecd2d93f8c0800000000000000
-      internalID: -3966654026724937289
+      spriteID: a0e4e0ec228073470800000000000000
+      internalID: 8374170977697680906
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      laser_0: -3966654026724937289
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
