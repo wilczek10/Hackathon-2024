@@ -21,6 +21,8 @@ public class Shooter : MonoBehaviour
         {
             Debug.LogError("Nie znaleziono gracza! Upewnij siê, ¿e gracz ma tag 'Player'.");
         }
+
+        fireTimer = fireInterval;
     }
 
     void Update()
@@ -30,7 +32,7 @@ public class Shooter : MonoBehaviour
         if (fireTimer >= fireInterval && target != null)
         {
             Fire();
-            fireTimer = 0f;
+            fireTimer -= fireInterval;
         }
     }
 
