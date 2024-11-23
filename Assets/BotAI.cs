@@ -3,23 +3,23 @@ using static UnityEngine.GraphicsBuffer;
 
 public class BotAI2D : MonoBehaviour
 {
-    public float speed = 3.0f;           // Prêdkoœæ poruszania bota
-    public float attackRange = 1.5f;    // Zasiêg ataku
-    public int attackDamage = 10;       // Obra¿enia zadawane przez bota
+    public float speed = 3.0f;           // Prï¿½dkoï¿½ï¿½ poruszania bota
+    public float attackRange = 1.5f;    // Zasiï¿½g ataku
+    public int attackDamage = 10;       // Obraï¿½enia zadawane przez bota
 
     private Transform player;           // Referencja do gracza
-    private PlayerHealth playerHealth;  // Referencja do skryptu ¿ycia gracza
+    public PlayerHealth playerHealth;  // Referencja do skryptu ï¿½ycia gracza
     private Animator animator;          // Animator bota
     private Rigidbody2D rb;             // Rigidbody 2D bota
     private float lastAttackTime;       // Czas ostatniego ataku
     private Vector2 movement;           // Kierunek ruchu
-    public float cooldown = 10f; // Odstêp czasu miêdzy strza³ami
+    public float cooldown = 10f; // Odstï¿½p czasu miï¿½dzy strzaï¿½ami
     private float fireTimer;
 
     void Start()
     {
         fireTimer = cooldown;
-        // ZnajdŸ gracza po tagu
+        // Znajdï¿½ gracza po tagu
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
@@ -53,19 +53,19 @@ public class BotAI2D : MonoBehaviour
     void Update()
     {
         fireTimer += Time.deltaTime;
-        if (player == null) return; // Jeœli brak gracza, nic nie rób
+        if (player == null) return; // Jeï¿½li brak gracza, nic nie rï¿½b
 
-        // Oblicz odleg³oœæ do gracza
+        // Oblicz odlegï¿½oï¿½ï¿½ do gracza
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (distanceToPlayer > attackRange)
         {
-            // Poruszaj siê w kierunku gracza
+            // Poruszaj siï¿½ w kierunku gracza
             MoveTowardsPlayer();
         }
         else
         {
-            // Jeœli atak nie jest na cooldownie, wykonaj go
+            // Jeï¿½li atak nie jest na cooldownie, wykonaj go
             
             
                 if (fireTimer >= cooldown)
@@ -85,19 +85,19 @@ public class BotAI2D : MonoBehaviour
 
     void MoveTowardsPlayer()
     {
-        // Ustaw animacjê poruszania
+        // Ustaw animacjï¿½ poruszania
         if (animator != null)
         {
             animator.Play("poruszanie_bot");
         }
 
-        // Oblicz kierunek ruchu w stronê gracza
+        // Oblicz kierunek ruchu w stronï¿½ gracza
         Vector2 direction = (player.position - transform.position).normalized;
 
-        // Poruszaj siê tylko w poziomie
+        // Poruszaj siï¿½ tylko w poziomie
         movement = new Vector2(direction.x, 0);
 
-        // Obróæ bota w kierunku gracza (tylko w poziomie)
+        // Obrï¿½ï¿½ bota w kierunku gracza (tylko w poziomie)
         if (movement.x > 0)
         {
             transform.localScale = new Vector3(-6, transform.localScale.y, transform.localScale.z); // Patrz w prawo
@@ -110,27 +110,27 @@ public class BotAI2D : MonoBehaviour
 
     void AttackPlayer()
     {
-        // Ustaw animacjê ataku
+        // Ustaw animacjï¿½ ataku
         if (animator != null)
         {
             animator.Play("atak");
         }
 
-        // Zadaj obra¿enia graczowi, jeœli referencja do PlayerHealth istnieje
+        // Zadaj obraï¿½enia graczowi, jeï¿½li referencja do PlayerHealth istnieje
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(attackDamage);
-            Debug.Log("Bot zadaje " + attackDamage + " obra¿eñ graczowi.");
+            Debug.Log("Bot zadaje " + attackDamage + " obraï¿½eï¿½ graczowi.");
         }
         else
         {
-            Debug.LogError("Nie mo¿na zadaæ obra¿eñ, brak referencji do PlayerHealth!");
+            Debug.LogError("Nie moï¿½na zadaï¿½ obraï¿½eï¿½, brak referencji do PlayerHealth!");
         }
 
         // Zaktualizuj czas ostatniego ataku
         lastAttackTime = Time.time;
 
-        Debug.Log("Bot wykona³ atak!");
+        Debug.Log("Bot wykonaï¿½ atak!");
     }
 
     void FixedUpdate()

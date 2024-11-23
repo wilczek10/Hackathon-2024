@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    public float speed = 10f;  // Prêdkoœæ pocisku
-    public int damage = 10;    // Obra¿enia zadawane przez pocisk
-    public float lifetime = 5f; // Czas ¿ycia pocisku
-    private Transform target;  // Cel, do którego zmierza pocisk
+    public float speed = 10f;  // Prï¿½dkoï¿½ï¿½ pocisku
+    public int damage = 10;    // Obraï¿½enia zadawane przez pocisk
+    public float lifetime = 5f; // Czas ï¿½ycia pocisku
+    private Transform target;  // Cel, do ktï¿½rego zmierza pocisk
     private Vector3 direction;
 
     void Start()
     {
-        // Zniszcz pocisk po okreœlonym czasie
+        // Zniszcz pocisk po okreï¿½lonym czasie
         Destroy(gameObject, lifetime);
     }
 
@@ -29,24 +29,24 @@ public class Laser : MonoBehaviour
             // Przesuwaj pocisk w kierunku celu
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
 
-            // Obróæ pocisk w stronê celu
+            // Obrï¿½ï¿½ pocisk w stronï¿½ celu
             transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
         }
         else
         {
-            // Jeœli cel zosta³ zniszczony, pocisk nie bêdzie mia³ dok¹d lecieæ
+            // Jeï¿½li cel zostaï¿½ zniszczony, pocisk nie bï¿½dzie miaï¿½ dokï¿½d lecieï¿½
             Destroy(gameObject);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                // Zadaj obra¿enia graczowi
+                // Zadaj obraï¿½enia graczowi
                 playerHealth.TakeDamage(damage);
             }
             // Zniszcz pocisk po trafieniu
