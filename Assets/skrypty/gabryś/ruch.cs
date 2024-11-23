@@ -2,36 +2,86 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Pr�dko�� poruszania si�
-    public float jumpForce = 7f; // Si�a skoku
-    public Transform groundCheck; // Punkt sprawdzaj�cy, czy posta� jest na ziemi
-    public LayerMask groundLayer; // Warstwa "ziemi", kt�ra pozwala sprawdzi�, czy gracz jest na ziemi
+    public float moveSpeed = 5f; // Prędkość poruszania się
+    public float jumpForce = 7f; // Siła skoku
+    public Transform groundCheck; // Punkt sprawdzający, czy postać jest na ziemi
+    public LayerMask groundLayer; // Warstwa "ziemi", która pozwala sprawdzić, czy gracz jest na ziemi
 
     private Rigidbody2D rb;
     private bool isGrounded;
-    private float groundCheckRadius = 0.2f; // Promie� sprawdzania, czy posta� dotyka ziemi
+    private float groundCheckRadius = 0.2f; // Promień sprawdzania, czy postać dotyka ziemi
     private float moveInput;
+    private Animator animator;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>(); // Pobranie komponentu Rigidbody2D
+    }
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        // Sprawdzenie, czy posta� dotyka ziemi
+        // Sprawdzenie, czy postać dotyka ziemi
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Pobranie wej�cia gracza (lewo/prawo)
+        // Pobranie wejścia gracza (lewo/prawo)
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // Poruszanie postaci�
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // Poruszanie postacią
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y); // Używamy linearVelocity
 
-        // Skakanie, je�li posta� jest na ziemi i nacisniesz strza�k� w g�r�
+        // Obrót postaci w zależności od kierunku
+        if (moveInput > 0)
+        {
+            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            {
+                transform.localScale = new Vector3(6, 6, 6);
+                animator.Play("bieganiezbronia");
+            }
+            else
+            {
+                transform.localScale = new Vector3(6, 6, 6);
+                animator.Play("bieganie");
+            }
+        }
+        else if (moveInput < 0)
+        {
+            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            {
+                transform.localScale = new Vector3(-6, 6, 6);
+                animator.Play("bieganiezbronia");
+            }
+            else
+            {
+                transform.localScale = new Vector3(-6, 6, 6);
+                animator.Play("bieganie");
+            }
+        }
+       
+
+        // Skakanie, jeśli postać jest na ziemi i nacisniesz strzałkę w górę
         if (isGrounded && (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow)))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie si�y skoku
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Nadanie siły skoku
+        }
+
+        // Animacja "wyciąganie", gdy naciśniesz "E"
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "trzymaniebroni" && animator.GetCurrentAnimatorClipInfo(0)[0].clip.name != "bieganiezbronia")
+            {
+                animator.Play("wyciaganie");
+            }
+            else if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "trzymaniebroni" || animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "bieganiezbronia")
+            {
+                animator.Play("chowanie");
+            }
+
         }
     }
 }

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c469d6bbedbcd884c9fa3c911095233c
+guid: 36eadf796e3a7174d9c1ea63b222ebdf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5251981876580929947
-    second: bieganie2_0
+      213: -4243389574673483943
+    second: idle2_0
+  - first:
+      213: -8683696539369610142
+    second: idle2_1
+  - first:
+      213: 3569995279447393958
+    second: idle2_2
+  - first:
+      213: 1193457304162379288
+    second: idle2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bieganie2_0
+      name: idle2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 26
+        y: 11
+        width: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56eaa973f463d17b0800000000000000
-      internalID: -5251981876580929947
+      spriteID: 957bdfd0aa37c15c0800000000000000
+      internalID: -4243389574673483943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 10
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264e59171005d7780800000000000000
+      internalID: -8683696539369610142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 6
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a68841cacb2b8130800000000000000
+      internalID: 3569995279447393958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816a13d4813009010800000000000000
+      internalID: 1193457304162379288
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bieganie2_0: -5251981876580929947
+      idle2_0: -4243389574673483943
+      idle2_1: -8683696539369610142
+      idle2_2: 3569995279447393958
+      idle2_3: 1193457304162379288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

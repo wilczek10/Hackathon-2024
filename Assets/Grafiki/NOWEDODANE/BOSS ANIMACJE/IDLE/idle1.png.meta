@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fdd207205f736684babc7aedd52ed2af
+guid: 6f6b13ba928985843ae714b80bd8cf8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4060578565071393681
-    second: wyciaganie broni1_0
+      213: 5905681027756182028
+    second: idle1_0
+  - first:
+      213: 2013725081197864288
+    second: idle1_1
+  - first:
+      213: 5077397758752466483
+    second: idle1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wyciaganie broni1_0
+      name: idle1_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 15
-        height: 27
+        x: 0
+        y: 11
+        width: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19355a9e0b21a5830800000000000000
-      internalID: 4060578565071393681
+      spriteID: c0acb28ea9135f150800000000000000
+      internalID: 5905681027756182028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle1_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 7
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065e71cca4032fb10800000000000000
+      internalID: 2013725081197864288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle1_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3362ec14c5a867640800000000000000
+      internalID: 5077397758752466483
       vertices: []
       indices: 
       edges: []
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wyciaganie broni1_0: 4060578565071393681
+      idle1_0: 5905681027756182028
+      idle1_1: 2013725081197864288
+      idle1_2: 5077397758752466483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

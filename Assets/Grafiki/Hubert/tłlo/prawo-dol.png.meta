@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fdd207205f736684babc7aedd52ed2af
+guid: cac522f5f91457a419408bae411b5441
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4060578565071393681
-    second: wyciaganie broni1_0
+      213: 1946442607234496558
+    second: prawo-dol_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wyciaganie broni1_0
+      name: prawo-dol_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 15
-        height: 27
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19355a9e0b21a5830800000000000000
-      internalID: 4060578565071393681
+      spriteID: e28b5e31d37230b10800000000000000
+      internalID: 1946442607234496558
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wyciaganie broni1_0: 4060578565071393681
+      prawo-dol_0: 1946442607234496558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

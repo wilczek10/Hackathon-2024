@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fdd207205f736684babc7aedd52ed2af
+guid: 4ea93118f7bd57542aa59ba715594e3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4060578565071393681
-    second: wyciaganie broni1_0
+      213: -8825204843830241745
+    second: guardianidlelewo2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wyciaganie broni1_0
+      name: guardianidlelewo2_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 2
         y: 0
-        width: 15
+        width: 16
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19355a9e0b21a5830800000000000000
-      internalID: 4060578565071393681
+      spriteID: f261175d3f2968580800000000000000
+      internalID: -8825204843830241745
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wyciaganie broni1_0: 4060578565071393681
+      guardianidlelewo2_0: -8825204843830241745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

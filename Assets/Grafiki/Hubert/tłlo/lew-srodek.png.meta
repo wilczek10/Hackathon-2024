@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a03af551e29b9674b96e99bcd7dcd353
+guid: 095136cd3fb4bf845bb87ca47a94ba68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2017040137749443634
-    second: bieganie3_0
+      213: 1397228724012412938
+    second: lew-srodek_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bieganie3_0
+      name: lew-srodek_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 26
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 234b24c8157fdfb10800000000000000
-      internalID: 2017040137749443634
+      spriteID: a007bb42f14f36310800000000000000
+      internalID: 1397228724012412938
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bieganie3_0: 2017040137749443634
+      lew-srodek_0: 1397228724012412938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
