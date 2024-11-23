@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ea93118f7bd57542aa59ba715594e3e
+guid: a03af551e29b9674b96e99bcd7dcd353
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8825204843830241745
-    second: guardianidlelewo2_0
+      213: 2017040137749443634
+    second: bieganie3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guardianidlelewo2_0
+      name: bieganie3_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
         width: 16
-        height: 27
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f261175d3f2968580800000000000000
-      internalID: -8825204843830241745
+      spriteID: 234b24c8157fdfb10800000000000000
+      internalID: 2017040137749443634
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      guardianidlelewo2_0: -8825204843830241745
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

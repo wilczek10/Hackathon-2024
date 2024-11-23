@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ea93118f7bd57542aa59ba715594e3e
+guid: 14fbb11820843b34297e9e03aa00b61c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8825204843830241745
-    second: guardianidlelewo2_0
+      213: 2920299800341178396
+    second: robot-atak1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guardianidlelewo2_0
+      name: robot-atak1_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
         width: 16
-        height: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f261175d3f2968580800000000000000
-      internalID: -8825204843830241745
+      spriteID: c18eafc223df68820800000000000000
+      internalID: 2920299800341178396
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      guardianidlelewo2_0: -8825204843830241745
+      robot-atak1_0: 2920299800341178396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
