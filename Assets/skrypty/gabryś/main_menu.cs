@@ -5,7 +5,7 @@ public class main_menu : MonoBehaviour
 {
    public void Graj()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("scena1");
     }
 
     public void Ustawienia()

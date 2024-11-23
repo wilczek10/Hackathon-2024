@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100; // Maksymalne zdrowie gracza
+    public int maxHealth = 200; // Maksymalne zdrowie gracza
     private int currentHealth; // Aktualne zdrowie gracza
 
     void Start()
@@ -50,9 +51,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        SceneManager.LoadScene("koniec gry");
         // Wywo³aj akcjê œmierci gracza
         Debug.Log("Gracz zgin¹³!");
-        //Destroy(gameObject);
+        Destroy(gameObject);
         // Dodaj logikê np. restart gry, animacja œmierci
     }
 

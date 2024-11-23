@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/jakie\u015B g\xF3wno domy\u015Blne/Scenes/SampleScene.unity"
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: "Assets/Sceny/Gabry\u015B/main_menu.unity"
+    guid: a555bed3501a83d4190c39f9d4f984f4
+  - enabled: 1
+    path: "Assets/Sceny/Gabry\u015B/menu_ustawien.unity"
+    guid: 26ed8f75f57b59942a5f487d9ad83538
+  - enabled: 1
+    path: "Assets/Sceny/Gabry\u015B/scena1.unity"
+    guid: 65350e0edbfc0274a9ab92cbb0623fe1
+  - enabled: 1
+    path: "Assets/Sceny/Gabry\u015B/wygra\u0142e\u015B.unity"
+    guid: 3f8591256d0d2db4f8d8cfe68ca17b51
+  - enabled: 1
+    path: "Assets/Sceny/Gabry\u015B/koniec gry.unity"
+    guid: 04e38b09b64fd8746a5a9c842f6e4f58
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

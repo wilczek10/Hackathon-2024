@@ -1942,8 +1942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: -0.5}
-  m_SizeDelta: {x: -28, y: -3}
+  m_AnchoredPosition: {x: 21.6206, y: -11.7183}
+  m_SizeDelta: {x: -2.7588, y: 19.4367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730110012
 MonoBehaviour:
@@ -1978,7 +1978,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle
+  m_Text: "Tryb Pe\u0142noekranowy\n"
 --- !u!222 &1730110013
 CanvasRenderer:
   m_ObjectHideFlags: 0

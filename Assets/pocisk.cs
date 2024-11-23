@@ -38,6 +38,14 @@ public class pocisk : MonoBehaviour
                 // Zadaj obra¿enia graczowi
                 zyciebot.TakeDamage(damage);
             }
+
+            zycieboss zycieboss = other.GetComponent<zycieboss>();
+            if (zycieboss != null)
+            {
+                // Zadaj obra¿enia graczowi
+                zycieboss.TakeDamage(damage);
+            }
+
             // Zniszcz pocisk po trafieniu
             Destroy(gameObject);
         }
